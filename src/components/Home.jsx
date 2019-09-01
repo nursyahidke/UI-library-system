@@ -13,7 +13,7 @@ export default class Home extends Component {
         }
       }
       componentDidMount() {
-        const apiUrl = 'http://localhost:8000/books';
+        const apiUrl = 'https://libraryapps.herokuapp.com/api/books';
     
         axios.get(apiUrl)
           .then(res => {

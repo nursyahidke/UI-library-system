@@ -25,7 +25,7 @@ export default class CustomNavbar extends Component {
 }
 
 componentDidMount() {
-  axios.get('http://localhost:8000/books/search')
+  axios.get('https://libraryapps.herokuapp.com/api/books/search')
     .then((data) => {
       this.setState({ books: [data] })
     })
@@ -33,7 +33,7 @@ componentDidMount() {
 
 handleSubmit = (e) => {
   e.preventDefault()
-  axios.get('http://localhost:8000/books/search')
+  axios.get('https://libraryapps.herokuapp.com/api/books/search')
     .then((data) => {
       console.log(data)
       this.setState({ books: [data] })
@@ -59,7 +59,7 @@ toggleNewBookModal() {
 }
 
 addBook() {
-  axios.post('http://localhost:8000/books', this.state.newBookData)
+  axios.post('https://libraryapps.herokuapp.com/api/books', this.state.newBookData)
       .then((response) => {
           let { books } = this.state
 
@@ -74,7 +74,7 @@ addBook() {
 }
 
 _refreshBooks() {
-  axios.get('http://localhost:8000/books')
+  axios.get('https://libraryapps.herokuapp.com/api/books')
       .then((response) => {
           this.setState({
               books: response.data

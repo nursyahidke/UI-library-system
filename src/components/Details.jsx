@@ -21,7 +21,7 @@ class Details extends Component{
         }
       }
       componentDidMount = () => {
-        axios.get('http://localhost:8000/books')
+        axios.get('https://libraryapps.herokuapp.com/api/books')
           .then (res => {
             this.setState ({databook: res.data});
             console.log ('databook =', this.state.databook);
@@ -37,7 +37,7 @@ class Details extends Component{
       
       updateBook() {
 
-        axios.put('http://localhost:8000/books/', this.state.editBookData)
+        axios.put('https://libraryapps.herokuapp.com/api/books/', this.state.editBookData)
           .then((response) => {
           this._refreshBooks()
 
@@ -54,7 +54,7 @@ class Details extends Component{
       }
 
       deleteBook(id) {
-        axios.delete('http://localhost:8000/books?id=' + id)
+        axios.delete('https://libraryapps.herokuapp.com/api/books?id=' + id)
           .then((response) => {
             console.log(response)
             this._refreshBooks()
@@ -62,7 +62,7 @@ class Details extends Component{
       }
 
       _refreshBooks() {
-        axios.get('http://localhost:8000/books')
+        axios.get('https://libraryapps.herokuapp.com/api/books')
           .then((response) => {
             this.setState({
               databook: response.data

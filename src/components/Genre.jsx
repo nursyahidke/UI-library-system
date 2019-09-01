@@ -11,7 +11,7 @@ class Details extends Component{
         };
       }
       componentDidMount = () => {
-        axios.get('http://localhost:8000/books')
+        axios.get('https://libraryapps.herokuapp.com/api/books')
           .then (res => {
             this.setState ({databook: res.data})
             console.log ('databook =', this.state.databook)

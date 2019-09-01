@@ -42,7 +42,7 @@ export default class ModalImage extends Component {
     }
 
     addBook() {
-        axios.post('http://localhost:8000/books', this.state.newBookData)
+        axios.post('https://libraryapps.herokuapp.com/api/books', this.state.newBookData)
             .then((response) => {
                 let { books } = this.state
 
@@ -59,7 +59,7 @@ export default class ModalImage extends Component {
     updateBook() {
         let { image, description, title } = this.state.editBookData
 
-        axios.put('http://localhost:8000/books/', this.state.editBookData, {
+        axios.put('https://libraryapps.herokuapp.com/api/books', this.state.editBookData, {
             image, description, title
         }).then((response) => {
             this._refreshBooks()
@@ -77,14 +77,14 @@ export default class ModalImage extends Component {
     }
 
     deleteBook(id) {
-        axios.delete('http://localhost:8000/books?id=' + id)
+        axios.delete('https://libraryapps.herokuapp.com/api/books?id=' + id)
             .then((response) => {
                 this._refreshBooks()
             })
     }
 
     _refreshBooks() {
-        axios.get('http://localhost:8000/books')
+        axios.get('https://libraryapps.herokuapp.com/api/books')
             .then((response) => {
                 this.setState({
                     books: response.data
