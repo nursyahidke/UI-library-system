@@ -1,0 +1,153 @@
+.body {
+    margin-left: 0;
+    margin-right: 0;
+  }
+.cover{
+  position: absolute;
+  width: 100%;
+  height: 454px;
+  left: 5px;
+  top: 0px;
+  right: 10px;
+  background: #FBCC38;
+}
+.image-detail {
+  max-height: 500px;
+  overflow: hidden;
+}
+.ellips{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 27px;
+  top: 20px;
+}
+.covermini{
+  position: absolute;
+  width: 200px;
+  height: 288.81px;
+  left: 1000px;
+  top: 253px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+.edit{
+  position: absolute;
+  width: 236px;
+  height: 40px;
+  left: 1100px;
+  top: 17px;
+  color: white;
+
+  font-family: Airbnb Cereal App;
+  font-size: 30px;
+  line-height: 39px;
+
+}
+.delete{
+  position: absolute;
+  width: 236px;
+  height: 40px;
+  left: 1200px;
+  top: 17px;
+  color: white;
+
+  font-family: Airbnb Cereal App;
+  font-size: 30px;
+  line-height: 39px;
+
+}
+.rectangle{
+  position: absolute;
+  width: 200px;
+  height: 35px;
+  left: 104px;
+  top: 474px;
+
+  background: #FBCC38;
+  border-radius: 15px;
+}
+.novel{
+  position: absolute;
+  width: 86px;
+  height: 30px;
+  left: 128px;
+  top: 479px;
+  font-family: Airbnb Cereal App;
+  font-size: 17px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.date{
+
+  position: absolute;
+  width: 300px;
+  height: 24px;
+  left: 109px;
+  top: 600px;
+  font-family: Airbnb Cereal App;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+}
+.box{
+  position: absolute;
+  width: 824px;
+  height: 342px;
+  left: 104px;
+  top: 650px;
+  font-family: Airbnb Cereal App;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+}
+.avail{
+  position: absolute;
+  width: 278px;
+  height: 51px;
+  left: 771px;
+  top: 509px;
+
+  font-family: Airbnb Cereal App;
+  font-size: 30px;
+  line-height: 39px;
+
+  color: #99D815;
+}
+.borrow{
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  left: 1000px;
+  top: 700px;
+
+  background: #FBCC38;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+.textborrow{
+  position: absolute;
+  width: 146px;
+  height: 38px;
+  left: 900px;
+  top: 858px;
+
+  font-family: Airbnb Cereal App;
+  font-size: 30px;
+  line-height: 1.5;
+
+  color: #FFFFFF;
+}
+.title {
+  position: absolute;
+  width: 600px;
+  height: 65px;
+  left: 104px;
+  top: 520px;
+
+  font-family: Airbnb Cereal App;
+  font-size: 25px;
+  line-height: 35px;
+
+  color: #000000;
+}
